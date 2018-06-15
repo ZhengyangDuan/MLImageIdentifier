@@ -12,6 +12,7 @@
 		B14BB9CA20D44FA1007C33AD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B14BB9C820D44FA1007C33AD /* Main.storyboard */; };
 		B14BB9CC20D44FA1007C33AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B14BB9CB20D44FA1007C33AD /* Assets.xcassets */; };
 		B14BB9CF20D44FA1007C33AD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B14BB9CD20D44FA1007C33AD /* LaunchScreen.storyboard */; };
+		B14BB9DD20D45100007C33AD /* Inceptionv3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = B14BB9DC20D45100007C33AD /* Inceptionv3.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		B14BB9CB20D44FA1007C33AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B14BB9CE20D44FA1007C33AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B14BB9D020D44FA1007C33AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B14BB9DC20D45100007C33AD /* Inceptionv3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Inceptionv3.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,13 +57,30 @@
 			isa = PBXGroup;
 			children = (
 				B14BB9C420D44FA1007C33AD /* AppDelegate.swift */,
-				B14BB9C620D44FA1007C33AD /* ViewController.swift */,
-				B14BB9C820D44FA1007C33AD /* Main.storyboard */,
+				B14BB9D820D450BC007C33AD /* controller */,
+				B14BB9DE20D45106007C33AD /* view */,
 				B14BB9CB20D44FA1007C33AD /* Assets.xcassets */,
+				B14BB9DC20D45100007C33AD /* Inceptionv3.mlmodel */,
 				B14BB9CD20D44FA1007C33AD /* LaunchScreen.storyboard */,
 				B14BB9D020D44FA1007C33AD /* Info.plist */,
 			);
 			path = MLImageIdentifier;
+			sourceTree = "<group>";
+		};
+		B14BB9D820D450BC007C33AD /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				B14BB9C620D44FA1007C33AD /* ViewController.swift */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		B14BB9DE20D45106007C33AD /* view */ = {
+			isa = PBXGroup;
+			children = (
+				B14BB9C820D44FA1007C33AD /* Main.storyboard */,
+			);
+			path = view;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,6 +155,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B14BB9C720D44FA1007C33AD /* ViewController.swift in Sources */,
+				B14BB9DD20D45100007C33AD /* Inceptionv3.mlmodel in Sources */,
 				B14BB9C520D44FA1007C33AD /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
